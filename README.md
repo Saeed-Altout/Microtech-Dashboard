@@ -22,11 +22,13 @@ MicroTech Dashboard is a Next.js-based administrative interface that provides a 
 ## Tech Stack
 
 ### Core Framework
+
 - **Next.js 14.2.3** - React framework with App Router
 - **React 18** - UI library
 - **TypeScript 5** - Type safety
 
 ### UI Components & Styling
+
 - **Tailwind CSS 3.4.1** - Utility-first CSS framework
 - **Radix UI** - Accessible component primitives
   - Dialog, Dropdown Menu, Popover, Select, Tabs, Tooltip, Checkbox, Label, Separator
@@ -38,16 +40,19 @@ MicroTech Dashboard is a Next.js-based administrative interface that provides a 
 - **clsx** & **tailwind-merge** - Conditional class utilities
 
 ### Forms & Validation
+
 - **React Hook Form 7.51.4** - Form state management
 - **Zod 3.23.8** - Schema validation
 - **@hookform/resolvers** - Form validation resolvers
 
 ### Data Management
+
 - **Axios 1.6.8** - HTTP client with interceptors
 - **Zustand 4.5.2** - State management
 - **TanStack React Table 8.17.3** - Data table component
 
 ### UI Enhancements
+
 - **Sonner 1.4.41** - Toast notifications
 - **cmdk** - Command menu component
 - **input-otp** - OTP input component
@@ -55,19 +60,21 @@ MicroTech Dashboard is a Next.js-based administrative interface that provides a 
 
 ## Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm, yarn, pnpm, or bun
 - Access to the MicroTech API backend
 
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd microtech-dashboard
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -77,6 +84,7 @@ pnpm install
 ```
 
 3. Create a `.env.local` file in the root directory:
+
 ```env
 NEXT_PUBLIC_BASE_URL=your-api-base-url
 ```
@@ -92,6 +100,7 @@ Create a `.env.local` file with the following variables:
 ### Next.js Configuration
 
 The project is configured for static export. Image optimization is set up for remote patterns including:
+
 - `adminpanel.microtechdev.com`
 - `127.0.0.1` (for local development)
 
@@ -155,6 +164,7 @@ The dashboard uses JWT-based authentication with automatic token refresh:
 ## API Integration
 
 The application uses Axios with:
+
 - Automatic authorization header injection
 - Request/response interceptors
 - Error handling with toast notifications
@@ -181,6 +191,7 @@ npm run start
 ## Features in Detail
 
 ### Project Management
+
 - View all projects in a data table
 - Create new projects
 - Edit existing projects
@@ -188,13 +199,16 @@ npm run start
 - View project details
 
 ### Data Tables
+
 All management pages use TanStack React Table for:
+
 - Sorting
 - Filtering
 - Pagination
 - Column visibility
 
 ### Theme Support
+
 - Light and dark mode
 - Persistent theme preference
 - Smooth theme transitions
